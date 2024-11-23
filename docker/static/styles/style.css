@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Rubic Bold";
+    src: url("/fonts/Rubik-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Rubic Regular";
+    src: url("/fonts/Rubik-Regular.ttf");
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: "Rubic Bold";
+    color: #728AB7;
+    background-color: #f0f0f3;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main {
+    border-radius: 98px;
+    background: linear-gradient(145deg, #f0f0f3, #d8d8db);
+    box-shadow: 26px 26px 43px #adadaf, -26px -26px 43px #ffffff;
+}
+
+header {
+    margin-top: 45px;
+    padding: 10px;
+    border-radius: 98px;
+    width: 693px;
+    height: 155px;
+    text-align: center;
+    margin-bottom: 54px;
+    
+}
+
+header h1 {
+    font-size: 64px;
+    color: #745FF2;
+}
+
+main {
+    width: 1460px;
+    height: 756px;
+    padding: 54px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+    height: auto;
+    padding: 54px;
+}
+
+.btn, .btn2 {
+    font-family: "Rubic Bold";
+    color: #6AB9B4;
+    padding: 0.7em 1.7em;
+    font-size: 54px;
+    border-radius: 0.9em;
+    background: #f0f0f3;
+    cursor: pointer;
+    border: 1px solid #f0f0f3;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.btn:active {
+    color: #728AB7;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.btn2 {
+    color: #986ABC;
+}
+
+.btn2:active {
+    color: #728AB7;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}

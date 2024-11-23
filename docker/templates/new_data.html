@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/new_data.css') }}">
+    <title>Добавить данные</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GameWin Predictor</h1>
+        </header>
+        <main>
+            <div class="top">
+                <a href="{{ url_for('home') }}">
+                    <div class="back-btn">
+                        <img src="{{ url_for('static', filename='imgs/arrow.svg') }}" alt="">
+                    </div>
+                </a>
+                <div class="new-data-info">
+                    <p>Обычный - учебное время<br>
+                        Сессия - период во время и за неделю до сессии<br>
+                        Выходные - каникулы, праздники</p>
+                </div>
+                <div class="info-icon">
+                    <img src="{{ url_for('static', filename='imgs/Vector.svg') }}" alt="">
+                </div>
+            </div>
+           <form action="{{ url_for('new_data') }}" method="POST" enctype="multipart/form-data">
+    <div class="drop-zone">
+        <p>Перетащите файл csv сюда или нажмите для загрузки</p>
+        <input type="file" name="file" class="file-input" hidden accept=".csv">
+        <div class="file-info">
+            <div class="file-icon"></div>
+            <span class="file-name">Файл не выбран</span>
+        </div>
+    </div>
+    <button type="submit" class="btn">Отправить</button>
+</form>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='scripts/drag-file.js') }}"></script>
+</body>
+
+</html>

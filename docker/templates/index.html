@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <title>Главный экран</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GameWin Predictor</h1>
+        </header>
+        <main>
+            <div class="hello">
+                <p>
+                    GameWin Predictor — это универсальное приложение для прогноза вероятности победы и оптимальных дат
+                    матчей спортивных команд, основанное на анализе данных прошлых игр и влияния внешних факторов, таких
+                    как учебная загруженность студентов. Возможные варианты периода: обычный, сессия, выходные.
+                </p>
+            </div>
+            <input class="input-date" placeholder="Период игры:" type="text">
+            <div class="button-container">
+                <a href="{{ url_for('predict') }}">
+                    <button class="btn">Спрогнозировать</button>
+                </a>
+                <a href="{{ url_for('new_data') }}">
+                    <button class="btn2">Добавить данные</button>
+                </a>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
