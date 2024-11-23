@@ -1,0 +1,133 @@
+p {
+    margin: 0;
+}
+
+.top {
+    display: flex;
+    gap: 54px;
+}
+
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50px;
+    background: #F0F0F3;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    padding: 24px;
+}
+
+.back-btn img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.back-btn:active {
+    color: #728AB7;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.new-data-info {
+    display: flex;
+    align-items: center;
+    width: 1008px;
+    height: 118px;
+    font-size: 28pt;
+    border-radius: 50px;
+    background: #F0F0F3;
+    box-shadow: 10px 10px 20px #cccccf, -10px -10px 20px #ffffff;
+    padding: 23px 20px;
+}
+
+.new-data-info p {
+    margin: 0;
+    text-align: left;
+}
+
+.info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50px;
+    background: #F0F0F3;
+    box-shadow: 10px 10px 20px #cccccf, -10px -10px 20px #ffffff;
+}
+
+.info-icon img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.drop-zone {
+    display: flex;
+    flex-direction: row; /* Размещаем элементы по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    gap: 20px;
+    width: 100%;
+    border: 2px dashed #728AB7;
+    padding: 20px;
+    border-radius: 15px;
+    background: #F0F0F3;
+}
+
+.drop-zone {
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    border: 2px dashed #728AB7;
+    border-radius: 25px;
+    background: #F0F0F3;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.drop-zone p {
+    font-size: 18pt;
+    color: #728AB7;
+    margin: 0;
+    padding: 10px;
+}
+
+.drop-zone:hover {
+    background: #e8e8e8;
+}
+
+.file-info {
+    display: flex;
+    flex-direction: column; /* Меняем на вертикальное расположение */
+    align-items: center; /* Центрируем элементы по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    font-size: 16px;
+    color: #728AB7;
+}
+
+.file-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.file-name {
+    font-size: 16pt;
+    color: #986ABC;
+    font-family: "Rubic Regular";
+}
+
+
+
+

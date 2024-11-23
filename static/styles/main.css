@@ -1,0 +1,38 @@
+.hello {
+    padding: 34px;
+    border-radius: 50px;
+    background: #F0F0F3;
+    box-shadow: 26px 26px 53px #cccccf, -26px -26px 53px #ffffff;
+}
+
+.hello p {
+    font-size: 34px;
+    margin: 0;
+    text-align: center;
+}
+
+.input-date {
+    border-radius: 50px;
+    background: #F0F0F3;
+    box-shadow: inset 15px 15px 29px #cccccf, inset -15px -15px 29px #ffffff;
+    height: 145px;
+    width: 532px;
+    border: none;
+    outline: none;
+    font-size: 58px;
+    color: #728ab7;
+    padding-left: 32px;
+    font-family: "Rubic Regular";
+}
+
+.input-date::placeholder {
+    font-size: 58px;
+    color: #728ab782;
+    font-family: "Rubic Regular";
+    opacity: 0.75;
+}
+
+.button-container {
+    display: flex;
+    gap: 65px;
+}

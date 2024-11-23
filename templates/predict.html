@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/predict.css') }}">
+    <title>Прогнозирование</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>GameWin Predictor</h1>
+        </header>
+        <main>
+            <div class="predict-value">
+                {% if prediction %}
+                    <p>{{ prediction }}</p>
+                {% else %}
+                    <p>Здесь будет отображаться результат предсказания.</p>
+                {% endif %}
+            </div>
+            <form method="POST" action="{{ url_for('predict') }}">
+                <button class="btn">Выполнить прогноз</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

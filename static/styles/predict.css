@@ -1,0 +1,48 @@
+.back-btn {
+    margin-right: 80em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50px;
+    background: #F0F0F3;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    padding: 24px;
+}
+
+.back-btn img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+.back-btn:active {
+    color: #728AB7;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.predict-text {
+    text-align: center;
+    padding: 34px;
+    border-radius: 50px;
+    background: #F0F0F3;
+    box-shadow: 26px 26px 53px #cccccf, -26px -26px 53px #ffffff;
+    font-size: 38pt;
+    width: 457px;
+    height: auto;
+}
+
+.predict-value {
+    text-align: center;
+    padding: 34px;
+    border-radius: 50px;
+    background: #F0F0F3;
+    box-shadow: 26px 26px 53px #cccccf, -26px -26px 53px #ffffff;
+    font-size: 38pt;
+    width: 457px;
+    height: auto;
+
+}
