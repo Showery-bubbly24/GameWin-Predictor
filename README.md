@@ -94,7 +94,7 @@ python app.py
 ### **1. Сборка образа и запуск контейнера**
 
 ```bash
-docker compose up --build`
+docker compose up --build
 ```
 
 Теперь приложение будет доступно по адресу `http://127.0.0.1:5000`.
