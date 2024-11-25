@@ -94,6 +94,7 @@ python app.py
 ### **1. Сборка образа и запуск контейнера**
 
 ```bash
+cd docker/
 docker compose up --build
 ```
 
@@ -105,7 +106,8 @@ docker compose up --build
 
 Проект создан с использованием следующих технологий:
 
-- **Streamlit** — для создания интерфейса.
+- **HTML, CSS, JavaScript** - для создания интерфейса и остальной front-end составляющей
+- **Python, Flask** — для создания back-end части.
 - **Scikit-learn** — для машинного обучения.
 - **Pandas** и (Опционально)**NumPy** — для работы с данными.
 - (Опционально)**Matplotlib** и **Seaborn** — для построения визуализаций.
